@@ -46,7 +46,6 @@ if(isset($_GET['edit'])){
         $description = $row['description'];
         $price = $row['price'];
     }
-
 }
 
 if (isset($_POST['update'])){
@@ -59,7 +58,6 @@ if (isset($_POST['update'])){
     WHERE id=$id") or die($mysqli->error);
 
 header("location: index.php");
-
 }
 
 ?>

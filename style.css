@@ -1,32 +1,55 @@
+/*global*/
+
+h1{
+    padding: 1em;
+}
 body{
     font: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-table{
-    width: 100%;
-    border-block-color: black;
-}
-
-th{
-    height: 50px;
 }
 
 a{
     text-decoration: none;
     color: #424242;
 }
-.form-rows{
-    padding: 1em;
-    text-align: center;
-    border-style: solid;
-    border-block-color: black;
+
+/*table styles*/
+table{
+    width: 100%;
 }
-form{
-    width: 75%;
+
+th{
+    background-color: lightgray;
+}
+
+tr{
+    border-bottom: 1px solid black;
+}
+
+.columns{
+    float: left;
+    padding: 10px;
+}
+.left{
+    width: 70%;
+}
+
+.right{
+    width: 25%;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*form styles*/
+#inputform{
     background-color: lightgray;
     margin-left: auto;
     margin-right: auto;
+    float: right;
+    position: sticky;
 }
 
 input[type="text"]{
