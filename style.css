@@ -1,5 +1,4 @@
 /*global*/
-
 h1{
     padding: 1em;
 }
@@ -12,7 +11,13 @@ a{
     text-decoration: none;
     color: #424242;
 }
+.left{
+    width: 100%;
+}
 
+.right{
+    width: 40%;
+}
 /*table styles*/
 table{
     width: 100%;
@@ -26,30 +31,15 @@ tr{
     border-bottom: 1px solid black;
 }
 
-.columns{
-    float: left;
-    padding: 10px;
-}
-.left{
-    width: 70%;
-}
-
-.right{
-    width: 25%;
-}
-
-.container:after {
-    content: "";
-    display: table;
-    clear: both;
+.container{
+    display: flex;
 }
 /*form styles*/
 #inputform{
     background-color: lightgray;
     margin-left: auto;
     margin-right: auto;
-    float: right;
-    position: sticky;
+ position: sticky; 
 }
 
 input[type="text"]{
@@ -61,4 +51,14 @@ input[type="text"]{
 button{
     height: 35px;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+    width: 100%;
+}
 }
